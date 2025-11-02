@@ -1,0 +1,22 @@
+import React from "react";
+import Marquee from "react-fast-marquee";
+
+const LatestNews = () => {
+  return (
+    <div className="flex items-center gap-3 bg-base-200 py-3 px-3">
+      <p className="px-3 py-1 text-base-100 bg-secondary">Latest</p>
+      <Marquee className="flex gap-5" pauseOnHover={true}>
+        <p>
+          Match Highlights: Germany vs Spain — as it happened ! Match
+          Highlights: Germany vs Spain as ...
+        </p>
+        <p>
+          Match Highlights: Bangladesh vs India — as it happened ! Match
+          Highlights: Germany vs Spain as ...
+        </p>
+      </Marquee>
+    </div>
+  );
+};
+
+export default LatestNews;
